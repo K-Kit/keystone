@@ -1,5 +1,22 @@
 # @keystone-next/auth
 
+## 8.0.0
+
+### Patch Changes
+
+- [`96ece1c61`](https://github.com/keystonejs/keystone/commit/96ece1c610c9125b162ddab07a00a16d2db55127) [#4526](https://github.com/keystonejs/keystone/pull/4526) Thanks [@timleslie](https://github.com/timleslie)! - Fixed error being thrown when no `authenticatedItem` is available.
+
+* [`39639b203`](https://github.com/keystonejs/keystone/commit/39639b2031bb749067ef537ea47e5d93a8bb89da) [#4529](https://github.com/keystonejs/keystone/pull/4529) Thanks [@timleslie](https://github.com/timleslie)! - Added missing attributes `path`, `viewsIndex`, and `customViews` to `FieldMeta`.
+
+- [`661104764`](https://github.com/keystonejs/keystone/commit/66110476491953af2134cd3cd4e3ef7c361ac5da) [#4509](https://github.com/keystonejs/keystone/pull/4509) Thanks [@timleslie](https://github.com/timleslie)! - Replaced `KeystoneAdminUIConfig.system` with `KeystoneAdminUIConfig.createConfig` to reduce API surface area.
+
+- Updated dependencies [[`2d3668c49`](https://github.com/keystonejs/keystone/commit/2d3668c49d1913afecbacf2b5ef164e553210956), [`5c75534f6`](https://github.com/keystonejs/keystone/commit/5c75534f6e9e0f10a6556a1f1dc87b5fdd986dd4), [`6d09df338`](https://github.com/keystonejs/keystone/commit/6d09df3381d1682b8002d52ed1696b661fdff035), [`a3908a675`](https://github.com/keystonejs/keystone/commit/a3908a675614fa8690ea641a124cc57c9f963618), [`39639b203`](https://github.com/keystonejs/keystone/commit/39639b2031bb749067ef537ea47e5d93a8bb89da), [`661104764`](https://github.com/keystonejs/keystone/commit/66110476491953af2134cd3cd4e3ef7c361ac5da), [`2308e5efc`](https://github.com/keystonejs/keystone/commit/2308e5efc7c6893c87652411496b15a8124f6e05)]:
+  - @keystone-next/admin-ui@5.0.0
+  - @keystone-next/keystone@6.1.0
+  - @keystone-next/types@7.0.0
+  - @keystone-next/fields@3.2.3
+  - @keystone-next/admin-ui-utils@2.0.3
+
 ## 7.0.0
 
 ### Patch Changes

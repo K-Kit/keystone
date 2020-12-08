@@ -1,5 +1,15 @@
 # @keystonejs/test-utils
 
+## 10.0.1
+
+### Patch Changes
+
+- [`efe97de24`](https://github.com/keystonejs/keystone/commit/efe97de24bd1de7a0f50bcbee6b445f4eef7311b) [#4522](https://github.com/keystonejs/keystone/pull/4522) Thanks [@timleslie](https://github.com/timleslie)! - Internally factored out `argGenerator` to support different system setup functions.
+
+- Updated dependencies [[`364ac9254`](https://github.com/keystonejs/keystone/commit/364ac9254735befd2d4804789bb62464bb51ee5b), [`defd05365`](https://github.com/keystonejs/keystone/commit/defd05365f31d0d6d4b6fd9ffe0a0c3928f97e79)]:
+  - @keystonejs/adapter-mongoose@10.1.0
+  - @keystonejs/adapter-prisma@1.1.0
+
 ## 10.0.0
 
 ### Major Changes

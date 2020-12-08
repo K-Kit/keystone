@@ -1,5 +1,11 @@
 # @keystonejs/adapter-mongoose
 
+## 10.1.0
+
+### Minor Changes
+
+- [`364ac9254`](https://github.com/keystonejs/keystone/commit/364ac9254735befd2d4804789bb62464bb51ee5b) [#4516](https://github.com/keystonejs/keystone/pull/4516) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency mongoose to `^5.11.5`.
+
 ## 10.0.1
 
 ### Patch Changes

@@ -1,7 +1,7 @@
 {
   "name": "@keystonejs/test-utils",
   "description": "Common utilities used while testing @keystonejs/* packages.",
-  "version": "10.0.0",
+  "version": "10.0.1",
   "author": "The KeystoneJS Development Team",
   "license": "MIT",
   "engines": {
@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@keystonejs/adapter-knex": "^12.0.2",
-    "@keystonejs/adapter-mongoose": "^10.0.1",
-    "@keystonejs/adapter-prisma": "^1.0.7",
+    "@keystonejs/adapter-mongoose": "^10.1.0",
+    "@keystonejs/adapter-prisma": "^1.1.0",
     "@keystonejs/app-graphql": "^6.1.3",
     "@keystonejs/keystone": "^17.1.1",
     "express": "^4.17.1",

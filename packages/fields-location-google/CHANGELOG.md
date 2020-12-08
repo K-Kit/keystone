@@ -1,5 +1,18 @@
 # @keystonejs/fields-location-google
 
+## 3.2.0
+
+### Minor Changes
+
+- [`364ac9254`](https://github.com/keystonejs/keystone/commit/364ac9254735befd2d4804789bb62464bb51ee5b) [#4516](https://github.com/keystonejs/keystone/pull/4516) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency mongoose to `^5.11.5`.
+
+### Patch Changes
+
+- Updated dependencies [[`364ac9254`](https://github.com/keystonejs/keystone/commit/364ac9254735befd2d4804789bb62464bb51ee5b), [`defd05365`](https://github.com/keystonejs/keystone/commit/defd05365f31d0d6d4b6fd9ffe0a0c3928f97e79)]:
+  - @keystonejs/adapter-mongoose@10.1.0
+  - @keystonejs/fields@20.2.0
+  - @keystonejs/adapter-prisma@1.1.0
+
 ## 3.1.0
 
 ### Minor Changes
