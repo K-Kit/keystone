@@ -112,9 +112,7 @@ export function getAdminMetaSchema({
   const staticAdminMeta: StaticAdminMeta = { ...adminMeta, lists, listsByKey };
 
   const isAccessAllowed =
-    config.session === undefined
-      ? undefined
-      : config.ui?.isAccessAllowed ?? (({ session }) => session !== undefined);
+    config.ui?.isAccessAllowed ?? (({ session }: KeystoneContext) => session !== undefined);
 
   return {
     typeDefs,
@@ -133,7 +131,7 @@ export function getAdminMetaSchema({
           if ('isAdminUIBuildProcess' in context || isAccessAllowed === undefined) {
             return staticAdminMeta;
           }
-          return Promise.resolve(isAccessAllowed({ session: context.session })).then(isAllowed => {
+          return Promise.resolve(isAccessAllowed(context)).then(isAllowed => {
             if (isAllowed) {
               return staticAdminMeta;
             }

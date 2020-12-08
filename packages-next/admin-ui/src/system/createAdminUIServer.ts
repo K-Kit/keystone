@@ -11,7 +11,6 @@ export const createAdminUIServer = async (
   system: KeystoneSystem,
   sessionImplementation?: SessionImplementation
 ) => {
-  const { createContext } = system;
   const app = next({ dev, dir: Path.join(process.cwd(), '.keystone', 'admin') });
   const handle = app.getRequestHandler();
   await app.prepare();
@@ -23,14 +22,16 @@ export const createAdminUIServer = async (
       handle(req, res);
       return;
     }
-    const session = (await sessionImplementation?.createContext?.(req, res, createContext))
-      ?.session;
+    const { createContext } = system;
+    const context = createContext({
+      sessionContext: await sessionImplementation?.createContext(req, res, createContext),
+    });
     const isValidSession = ui?.isAccessAllowed
-      ? await ui.isAccessAllowed({ session })
-      : session !== undefined;
+      ? await ui.isAccessAllowed(context)
+      : context.session !== undefined;
     const maybeRedirect = await ui?.pageMiddleware?.({
       req,
-      session,
+      session: context.session,
       isValidSession,
       createContext,
     });
