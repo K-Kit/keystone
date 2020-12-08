@@ -133,7 +133,7 @@ export type CreateContext = (args: {
 }) => KeystoneContext;
 
 export type SessionImplementation = {
-  createContext(
+  createSessionContext(
     req: IncomingMessage,
     res: ServerResponse,
     createContext: CreateContext

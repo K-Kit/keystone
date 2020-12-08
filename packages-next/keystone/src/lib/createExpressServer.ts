@@ -28,7 +28,7 @@ const addApolloServer = ({
     formatError, // TODO: this needs to be discussed
     context: async ({ req, res }: { req: IncomingMessage; res: ServerResponse }) =>
       createContext({
-        sessionContext: await sessionImplementation?.createContext(req, res, createContext),
+        sessionContext: await sessionImplementation?.createSessionContext(req, res, createContext),
       }),
     // FIXME: support for apollo studio tracing
     // ...(process.env.ENGINE_API_KEY || process.env.APOLLO_KEY
